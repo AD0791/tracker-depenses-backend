@@ -30,12 +30,12 @@ mongoose
 app.use('/api/transactions', transactionsRoutes)
 
 // we want to serve any static files directly form our server in a production environment
-if (nodeENV === 'production') {
-    app.use(express.static('client/public'))
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
-    })
-}
+// if (nodeENV === 'production') {
+//     app.use(express.static('client/public'))
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
+//     })
+// }
 
 
 app.listen(port, () => console.log('Express is running at port ' + port))

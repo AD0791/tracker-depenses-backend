@@ -4,13 +4,12 @@ const mongoose = require('mongoose')
 const {
     port,
     mongoURI,
-    nodeENV
 } = require('./config')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const transactionsRoutes = require('./routes/transactions')
-const path = require('path')
+//const path = require('path')
 
 
 app.use(cors())

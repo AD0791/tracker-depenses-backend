@@ -11,6 +11,7 @@
   "author": "Alexandro Disla",
   "license": "MIT",
   "scripts": {
+    "build": "node server.js",
     "start": "node server.js",
     "test": "nodemon server.js"
   },

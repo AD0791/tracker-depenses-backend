@@ -1,0 +1,7 @@
+{
+    "name": "tracker-depenses-backend",
+    "version": 1,
+    "env": {
+        "MONGO_URI": "@mongodb-uri"
+    }
+}
